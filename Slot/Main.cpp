@@ -36,8 +36,8 @@ int main() {
 		while (true) {
 
 			if (GetKeyState(VK_SPACE) & 0x8000) {
-				system("cls");
 				while (GetKeyState(VK_SPACE) & 0x8000);
+				system("cls");
 				for (int i = 0; i = (rand() + 10) % 25; i++)
 					QU1.Extract();
 				for (int i = 0; i = (rand() + 10) % 25; i++)
@@ -55,9 +55,11 @@ int main() {
 					arr[i][3] = QU4.GetNum();
 					arr[i][4] = QU5.GetNum();
 				}
-				cout << "\n\t" << arr[0][0] << ' ' << arr[0][1] << ' ' << arr[0][2] << ' ' << arr[0][3] << ' ' << arr[0][4];
-				cout << "\n\t" << arr[1][0] << ' ' << arr[1][1] << ' ' << arr[1][2] << ' ' << arr[1][3] << ' ' << arr[1][4];
-				cout << "\n\t" << arr[2][0] << ' ' << arr[2][1] << ' ' << arr[2][2] << ' ' << arr[2][3] << ' ' << arr[2][4];
+				cout << "\n\t#####################";
+				cout << "\n\t" << "# "  << arr[0][0] << " # " << arr[0][1] << " # " << arr[0][2] << " # " << arr[0][3] << " # " << arr[0][4] << " # ";
+				cout << "\n\t" << "# " << arr[1][0] << " # " << arr[1][1] << " # " << arr[1][2] << " # " << arr[1][3] << " # " << arr[1][4] << " # ";
+				cout << "\n\t" << "# " << arr[2][0] << " # " << arr[2][1] << " # " << arr[2][2] << " # " << arr[2][3] << " # " << arr[2][4] << " # ";
+				cout << "\n\t#####################";
 				break;
 			}
 		}
